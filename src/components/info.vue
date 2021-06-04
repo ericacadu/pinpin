@@ -77,9 +77,12 @@
       <div class="row g-0">
         <button
           class="col-7 btn btn-lg btn-outline-secondary rounded-pill border-2 d-flex align-items-center justify-content-center"
+          :class="isActive ? 'active' : ''"
+          @click="isActive = !isActive"
         >
           <i class="fas fa-heart me-2"></i>
-          追蹤專案
+          <span v-if="isActive == false">追蹤專案</span>
+          <span v-else>取消追蹤</span>
         </button>
         <button
           class="col ms-2 btn btn-lg btn-outline-secondary rounded-pill border-2 d-flex align-items-center justify-content-center"
@@ -98,7 +101,8 @@ import scroll from './scrollToForm'
 export default {
   data () {
     return {
-      tooltips: ['認證標章', '品質保證', '原生創意', '人氣王']
+      tooltips: ['認證標章', '品質保證', '原生創意', '人氣王'],
+      isActive: false
     }
   },
   methods: {

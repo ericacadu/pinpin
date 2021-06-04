@@ -25,11 +25,28 @@ h1
   letter-spacing: 1px
   &-warning
     color: $gray-800
-  &:hover, &:focus
+    &:focus
+      color: $gray-800
+  &:hover
     color: $white
     background: $red
     border-color: $red
     box-shadow: 0 0 0 transparent
+  
+.btn-outline-secondary
+  &.active
+    background: transparent
+    color: $secondary
+    i 
+      color: $red
+    &:hover
+      border-color: $warning
+  &:hover, 
+    background: $warning
+    border-color: $warning
+    color: $gray-800
+    i
+      color: $red
 
 .radius
   border-radius: $border-radius-lg * 5
