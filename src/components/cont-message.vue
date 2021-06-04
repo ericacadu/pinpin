@@ -19,7 +19,7 @@
         <p class="avatar m-0">
           <img
             v-if="item.avatar"
-            :src="'../assets/images/' + item.avatar"
+            :src="require(`../../public/assets/images/${item.avatar}`)"
             alt="item.name"
           />
           <img v-else src="../../public/assets/images/user_img02.jpg" alt="" />

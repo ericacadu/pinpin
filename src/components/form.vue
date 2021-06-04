@@ -87,13 +87,13 @@
       </button>
     </div>
     <div
-      class="row text-center position-fixed bottom-0 start-0 overflow-hidden btn-shadow d-md-none"
+      class="row g-0 col-12 text-center position-fixed bottom-0 start-0 overflow-hidden btn-shadow d-md-none"
       v-if="sticky == true"
     >
       <a
         role="button"
         @click.prevent="scrollToForm"
-        class="btn btn-warning px-5 py-2 fs-5 mx-auto rounded-0 vw-100"
+        class="btn btn-warning px-5 py-2 fs-5 mx-auto rounded-0"
       >
         贊助專案
       </a>

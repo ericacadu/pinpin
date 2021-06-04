@@ -47,7 +47,7 @@
         <div class="w-100 d-flex align-items-center flex-nowrap">
           <img
             class="col-ms-3"
-            :src="`../assets/images/icon_good0${i + 1}.svg`"
+            :src="require(`../../public/assets/images/icon_good0${i + 1}.svg`)"
             alt=""
           />
           <small class="col d-md-none px-1 text-nowrap text-secondary">{{

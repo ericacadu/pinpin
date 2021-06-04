@@ -33,7 +33,7 @@
         <div class="modal-footer border-0 mb-4">
           <div class="w-100 border-0 border-bottom border-1 position-relative">
             <p
-              class="position-absolute top-50 start-50 translate-middle text-muted fs-7 bg-white px-3"
+              class="position-absolute top-50 start-50 translate-middle text-muted fs-7 bg-white px-3 text-nowrap"
             >
               還沒有帳號？
               <a href="#" class="text-link text-danger">註冊一個帳號</a>

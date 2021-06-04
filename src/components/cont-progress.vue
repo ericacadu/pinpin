@@ -10,7 +10,7 @@
         <div
           class="col-4 overflow-hidden card-photo"
           :style="{
-            'background-image': `url(../assets/images/news0${key + 1}.jpg)`,
+            'backgroundImage': `url(${require(`../../public/assets/images/news0${key + 1}.jpg`)})`,
           }"
         ></div>
         <div class="col-8 p-3 d-flex flex-column justify-content-start">
