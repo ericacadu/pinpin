@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container-fluid g-0">
+      <Navbar />
+      <Header />
+      <div class="container-fluid border-bottom sticky-top bg-white">
+        <Tabs />
+      </div>
+       <div class="container px-3 py-4" id="tabs-wrapper">
+         <Main />
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-4 fs-7"
+    style="letter-spacing: 1px;">
+      Copyright &copy; 拼拼 All rights reserved.
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navbar from './components/nav'
+import Header from './components/header'
+import Tabs from './components/nav-tabs'
+import Main from './components/main'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Header,
+    Tabs,
+    Main
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import './assets/style'
 </style>

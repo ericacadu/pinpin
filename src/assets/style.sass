@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap')
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+@import '~bootstrap/scss/functions'
+@import './helpers/_variables'
+@import './helpers/_utilities'
+@import '~bootstrap/scss/mixins'
+@import '~bootstrap/scss/bootstrap'
+*
+  // outline: 1px solid $red
+  
+// basic setting
+body
+  color: $dark
+
+button, input
+  &:focus
+    box-shadow: 0 0 0 transparent !important
+
+h1
+  letter-spacing: 3px
+
+// custom style
+.btn
+  color: $secondary
+  letter-spacing: 1px
+  &-warning
+    color: $gray-800
+  &:hover, &:focus
+    color: $white
+    background: $red
+    border-color: $red
+    box-shadow: 0 0 0 transparent
+
+.radius
+  border-radius: $border-radius-lg * 5
+
+.ff-bt2
+  font-family: 'Baloo Tammudu 2'
+
+.progress-bar
+  line-height: 1.5
+  padding-top: .15rem
+  font-weight: 500
+
+.ico-tooltip
+  img
+    height: 20px
+    +media-breakpoint-up(md)
+      height: 24px
+
+.tooltip
+  letter-spacing: 2px
+
+.nav-pills 
+  border: 0
+  border-radius: 0
+  .nav-link
+    color: $dark
+    border-radius: 0
+    border-bottom: 2px solid transparent
+    padding: 2.2rem 3rem
+    &.active
+      color: $dark
+      font-weight: 500
+      border-bottom: 2px solid $warning
+      background: transparent
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      white-space: nowrap
+
+.accordion-button
+  &::after
+    background-image: none
+    font-family: "FontAwesome"
+    content: '\f107'
+    width: auto
+    height: auto
+    line-height: 1
+    font-size: 1.2rem
+  &:not(.collapsed)
+    background: transparent
+    &::after
+      background-image: none
+  .icon
+    font-weight: 600
+    width: 1rem + (0.4rem * 2)
+    height: 1rem + (0.4rem * 2)
+    line-height: 1.4rem
+    padding: 0.4rem
+    color: $gray-800
+    display: flex
+    justify-content: center
+
+.accordion-collapse
+  border-top: 1px solid transparent
+  &.show, &.collapsing
+    border-top: 1px solid $gray-300
+
+.card-photo
+  min-height: 132px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: auto 100%
+  +media-breakpoint-up(lg)
+    background-size: 100% auto
+
+.text-link
+  text-decoration: none
+
+.card
+  .text-muted
+    font-weight: 400
+  .text-link
+    font-weight: 600
+  .tags small
+    line-height: 2.5
+    height: 1.45rem
+    padding: 0 0.8rem
+    background: #E8E8DB
+    font-weight: 500
+    color: $secondary
+    white-space: nowrap
+
+.avatar
+  border-radius: 50%
+  overflow: hidden
+  max-width: 100px
+  max-height: 100px
+
+.medin-icons
+  width: 30px
+  height: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  color: $white
+  background: $secondary
+  text-decoration: none
+  &:hover
+    color: $white
+    background: $red
+
+.form-control
+  border-color: transparent
+  background-color: #F7F7F7
+  color: #999
+  padding: 0.5rem 1rem
+  &:focus
+    background: #F7F7F7
+
+.btn-shadow
+  box-shadow: 0 0 0.7rem rgba($dark, .4)
+
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"]
+  background-repeat: no-repeat !important
+  
+.modal-header
+  border-top: 4px solid $warning
+
+.fa-beat
+  animation: fa-beat .5s ease-in alternate infinite
+
+@keyframes fa-beat
+  0%, 100%
+    transform: scale(1)
+  30%, 70%
+    transform: scale(1.25)
+    
