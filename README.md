@@ -6,8 +6,11 @@
 * 設計稿：[連結](https://hexschool.github.io/boootstrap5WebLayout/)
 
 ## 主要功能
-* 引入 Bootstrap5 切版
+* 引入 Bootstrap5
 * 使用 Vue-Cli 拆分元件
-* 使用 LocalStorage 儲存追蹤專案按鈕狀態
+* LocalStorage 儲存追蹤專案按鈕狀態
+* 選擇贊助專案後，表單帶入方案資料
+* 加入 Modal 功能
+* 支援 RWD 響應式網站
 
 
