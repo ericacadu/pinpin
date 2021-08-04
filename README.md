@@ -5,7 +5,7 @@
 * Demo：https://ericacadu.github.io/pinpin/
 * 設計稿：[連結](https://hexschool.github.io/boootstrap5WebLayout/)
 
-## 主要功能
+## 專案說明
 * 引入 Bootstrap5
 * 使用 Vue-Cli 拆分元件
 * LocalStorage 儲存追蹤專案按鈕狀態
